@@ -1,0 +1,12 @@
+@import '~arui-feather/main.css';
+
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (--large) {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}

@@ -1,0 +1,65 @@
+@import '~arui-feather/vars';
+
+.features {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (--medium) {
+        flex-direction: row;
+        width: 75%;
+    }
+
+    @media (--large) {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (--medium) {
+            width: 184px;
+            margin-right: 44px;
+            margin-bottom: 26px;
+            display: block;
+        }
+    }
+
+    &__title {
+        font-family: var(--font);
+        font-weight: var(--font-weight-normal);
+        font-size: var(--font-size-m);
+        opacity: 0.8;
+        margin: 0;
+        width: 50%;
+        padding-right: 10px;
+
+        @media (--medium) {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-content-minor-alfa-on-white);
+            width: auto;
+            padding-right: 10px;
+            margin: 0 0 10px;
+        }
+    }
+
+    &__text {
+        font-size: var(--font-size-l);
+        margin: 0;
+
+        @media (--medium) {
+            font-size: var(--font-size-xl);
+        }
+    }
+}

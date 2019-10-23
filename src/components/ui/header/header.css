@@ -1,0 +1,71 @@
+@import '~arui-feather/vars';
+
+:root {
+    --top-indent: 90px;
+    --top-indent--large: 0;
+    --top-indent-link: var(--top-indent);
+    --top-indent-link--large: var(--top-indent--large);
+}
+
+.header {
+    padding-top: var(--top-indent);
+
+    @media (--large) {
+        padding-top: var(--top-indent--large);
+    }
+
+    &__titles-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #f7f7f9;
+        border-radius: 5px;
+
+        @media (--medium) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        &:before {
+            position: absolute;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            width: 700px;
+            height: 1px;
+            background-color: #f2f2f2;
+
+            @media (--large) {
+                content: '';
+            }
+        }
+
+        @media (--large) {
+            position: relative;
+            background-color: transparent;
+            padding: 0;
+            padding-top: 90px;
+        }
+    }
+
+    &__logo-link {
+        position: absolute;
+        z-index: 1000;
+        transform: translate(0, calc(var(--top-indent-link) * -1));
+
+        @media (--large) {
+            transform: translate(-175px, calc(var(--top-indent-link--large) * -1));
+        }
+    }
+
+    &__pre-title {
+        color: var(--color-content-minor-alfa-on-white);
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-size: 40px;
+    }
+}

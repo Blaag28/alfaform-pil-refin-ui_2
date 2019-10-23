@@ -1,0 +1,38 @@
+@import '~arui-feather/main.css';
+
+body {
+    background: #fff;
+
+    .modal {
+        &__wrapper {
+            @media (--small-only) {
+                background: rgba(0, 0, 0, .9);
+            }
+        }
+    }
+}
+
+.page {
+    &__header {
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        margin-bottom: 30px;
+    }
+}
+
+.custom-page {
+    &__content {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    &__footer {
+        padding-left: 0;
+    }
+
+    &__footer-content {
+        width: auto;
+    }
+}

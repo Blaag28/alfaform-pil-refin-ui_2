@@ -1,0 +1,42 @@
+@import 'arui-feather/vars.css';
+
+.refin {
+    margin-bottom: 20px;
+    &__refin-info {
+         padding: 16px;
+         background: #f3f4f5;
+         margin-bottom: 24px;
+    .list {
+        margin-bottom: 0;
+    &__item:last-child {
+         margin-bottom: 0;
+     }
+    }
+    }
+
+    &__heading {
+         margin-top: 0;
+         margin-bottom: 10px;
+
+    &_indent_top {
+         margin-top: 15px;
+     }
+
+    &_indent_custom {
+         margin-top: 45px;
+     }
+    }
+
+    &__text {
+         color: var(--color-content-minor-alfa-on-white);
+     }
+    &__list {
+         margin-top: 5px;
+         margin-bottom: 20px;
+         color: var(--color-content-minor-alfa-on-white);
+
+    &.list {
+         padding-left: 35px;
+     }
+    }
+}

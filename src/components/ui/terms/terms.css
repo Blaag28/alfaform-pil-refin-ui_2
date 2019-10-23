@@ -1,0 +1,71 @@
+@import 'arui-feather/vars.css';
+
+.terms {
+    text-align: justify;
+    line-height: 20px;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: decimal;
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-bold);
+
+        &_bullet {
+            list-style-type: disc;
+        }
+
+        &_indent {
+            padding: 15px 15px 0;
+        }
+
+        &_small {
+            font-size: 10px;
+
+            .terms {
+                &__list {
+                    font-size: 10px;
+                    padding: 5px 15px 0;
+                }
+
+                &__term:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        sup {
+            margin-left: -5px;
+        }
+    }
+
+    &__term:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    &__info {
+        position: relative;
+        margin-top: 70px;
+        font-size: 10px;
+        font-weight: var(--font-weight-bold);
+
+        &:before {
+            position: absolute;
+            top: -5px;
+            left: -20px;
+            width: 200px;
+            height: 1px;
+            background: #000;
+            content: '';
+        }
+    }
+
+    &__text {
+        margin: 5px 0 5px -20px;
+    }
+
+    .paragraph {
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-bold);
+    }
+}
